@@ -1,0 +1,14 @@
+liste des actions:
+
+1: aller à menu principal
+2: aller à menu data 1
+3: aller à menu data 2
+4: aller à menu repérage
+5: aller à menu set repérage
+6: zoom repérage
+7: unzoom repérage
+8: aller à menu connections
+9: aller à la prochaine décimale (set repérage)
+10: incrémenter décimale (set repérage)
+11: décrémenter décimale (set repérage)
+12: aller à menu data 3
