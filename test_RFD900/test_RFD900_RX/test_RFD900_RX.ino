@@ -9,7 +9,7 @@
 #define RFD_PORT_NB 1
 #define RFD_BAUD_RATE 57600
 
-Transceiver RFD_RX();
+Transceiver RFD_RX;
 
 SerialPort serial_RX(RFD_PORT_NB, RFD_BAUD_RATE);
 
@@ -39,14 +39,17 @@ SerialPort serial_RX(RFD_PORT_NB, RFD_BAUD_RATE);
 RocketPacket rpktRX;
 
 void setup(){
+    Serial.begin(9600);
     Serial.println("La reception va commencer");
     serial_RX.begin();
 }
 
 void loop(){
-    Serial.println("reception du rocketPacket1");
-    RFD_RX.sendRocketPacket(rpkt1);
-    rpktRX = RFD_RX.receiveRocketPacket(rpktRX, RFD_PORT_NB);
-    Serial.print("timestamp = ");
-    Serial.println(rpktRX.rocketData.timeStamp);
+    if (serial_RX.available())
+    {
+      Serial.println("reception du rocketPacket1");
+      rpktRX = RFD_RX.receiveRocketPacket(rpktRX, serial_RX);
+      Serial.print("timestamp = ");
+      Serial.println(rpktRX.rocketData.timeStamp);
+    }
 }
