@@ -5,6 +5,7 @@
 #include "transceiver.h"
 #include "rocketData.h"
 #include "serialPort.h"
+#include "acquisitionLogger.h"
 
 #define RFD_PORT_NB 1
 #define RFD_BAUD_RATE 57600
