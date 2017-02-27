@@ -3,9 +3,9 @@
 #include "affichage.h"
 #include "boutonSol.h"
 #include "Compas.h"
-#include"GPS.h"
-#include"SerialPort.h"
-#include"fctSol.h"
+#include "GPS.h"
+#include "SerialPort.h"
+#include "fctSol.h"
 #include "acquisitionLogger.h"
 #include "rocketData.h"
 #include "serialPort.h"
@@ -15,12 +15,12 @@
 #define DISPLAY_TIME_INTERVAL 200
 
 #define LOG_TIME_INTERVAL 1000
-#define SD_CS_PIN 53 
+#define SD_CS_PIN 53
 #define SYSTEM_TYPE "r"
 
 #define ORDI_PORT_NB 0
 #define ORDI_BAUD_RATE 9600
-#define RFD_PORT_NB 1 
+#define RFD_PORT_NB 1
 #define RFD_BAUD_RATE 57600
 #define GPS_PORT_NB 2
 #define GPS_BAUD_RATE 9600
@@ -42,7 +42,7 @@ Compas compas(MAG_DECLINAISON);
 SerialPort ordiPort(ORDI_PORT_NB, ORDI_BAUD_RATE);
 SerialPort RFDPort(RFD_PORT_NB, RFD_BAUD_RATE);
 SerialPort GPSPort(GPS_PORT_NB, GPS_BAUD_RATE);
-GPS GPS(GPSPort,0);
+GPS GPS(GPSPort, 0);
 
 RocketPacket oldRocketPacket;
 RocketPacket rocketPacket;
@@ -71,7 +71,7 @@ bool RFD=false;
 float maxAlt = 0;
 
 long temps_affichage = millis();
-long temps_SDLogger  = millis(); 
+long temps_SDLogger  = millis();
 
 long timeStampPrecedent;
 float altitudePrecedente;
@@ -80,7 +80,7 @@ long tempsUpdate;
 
 bool valueUpToDate = false;
 
-void setup() 
+void setup()
 {
   GLCD.Init();
   GLCD.SelectFont(System5x7);
@@ -103,7 +103,7 @@ void setup()
 }
 
 //                                         CODE PRINCIPAL
-void loop() 
+void loop()
 {
 //Réception des données
   oldRocketPacket = rocketPacket;
@@ -144,12 +144,12 @@ void timerIsr() {
 void faireAffichage(int mMenu){
 if ((millis()-temps_affichage) > DISPLAY_TIME_INTERVAL || menu != ancienMenu){
   switch(mMenu){
-    
+
     case 1:
     LCD.displayAccueil();
     ancienMenu=1;
     break;
-    
+
     case 2:
     LCD.displayData(getVSI(), rocketPacket.rocketData.accelZ, maxAlt, rocketPacket.rocketData.altitude);
     ancienMenu=2;
@@ -188,7 +188,7 @@ if ((millis()-temps_affichage) > DISPLAY_TIME_INTERVAL || menu != ancienMenu){
     case 7:
     GPS.updateCoord(GPSPort);
     LCD.displayData3(GPS.getLat(), GPS.getLong(), compas.getNorthAngle());
-    ancienMenu=7;  
+    ancienMenu=7;
   }
 temps_affichage=millis();
 }
@@ -258,7 +258,7 @@ void SDLog()
   }
 }
 
-float getVSI() 
+float getVSI()
 {
   float VSI = 0;
   if(rocketPacket.rocketData.timeStamp-timeStampPrecedent != 0)
@@ -267,4 +267,3 @@ float getVSI()
   }
   return VSI;
 }
-

@@ -31,6 +31,11 @@ void setup(){
     bool test_init_sd = false;
     while(!test_init_sd){
         test_init_sd = sdLogger.initCard();
+        if(!test_init_sd){
+            Serial.println("failed");
+        } else {
+            Serial.println("sucess");
+        }
     }
     sdLogger.writeHeader();
 }

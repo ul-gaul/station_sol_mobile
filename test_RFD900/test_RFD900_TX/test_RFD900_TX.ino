@@ -31,10 +31,10 @@ void setup(){
     rdata1.magnetY = 32;
     rdata1.magnetZ = 33;
     rdata1.altitude = 40;
-    rdata1.latitude1 = 51;
-    rdata1.longitude1 = 52;
-    rdata1.latitude2 = 53;
-    rdata1.longitude2 = 54;
+    rdata1.latitude1 = 46.743480;   // coordonnees du
+    rdata1.longitude1 = -71.286585; // pont de Quebec
+    rdata1.latitude2 = 46.743480;
+    rdata1.longitude2 = -71.286585;
     rdata1.temperature1 = 61;
     rdata1.temperature2 = 62;
     rpkt1.rocketData = rdata1;
