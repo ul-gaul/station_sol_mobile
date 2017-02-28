@@ -14,7 +14,7 @@
 class GPS
 {
   public:
-    GPS(SerialPort SerialGPS, int type);
+    GPS(SerialPort* SerialGPS, int type);
     float getDistance(float lat1, float long1, float lat2, float long2);
     float courseTo(float lat1, float long1, float lat2, float long2);
     unsigned short int getConnection ();
@@ -30,7 +30,7 @@ class GPS
     };
     void updateCoord(SerialPort SerialGPS);
     RocketPacket getLocation(RocketPacket rocket_packet, SerialPort GPSPort);
-    
+
   private:
     TinyGPS mTinyGPS;
     bool mNewData;

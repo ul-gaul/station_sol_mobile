@@ -19,9 +19,12 @@ GPS::GPS(SerialPort* SerialGPS, int type) {
 void GPS::updateCoord(SerialPort SerialGPS)
 {
   Serial.println("updatecoords");
-  if(feedGPS(SerialGPS)) {
-    GPSData();
-  }
+  // if(feedGPS(SerialGPS)) {
+  //     Serial.println("feedGPS success");
+  //     GPSData();
+  // }
+  // Serial.println("feedGPS fail");
+  GPSData();
 }
 
 float GPS::getDistance(float lat1, float long1, float lat2, float long2)
@@ -41,21 +44,27 @@ return mCourse;
 
 unsigned short int GPS::getConnection ()
 {
-  mSat=mTinyGPS.satellites();
-  if (mSat<255){
-    return mSat;
-  }
-  else {
-    return 0;
-    }
+  // mSat=mTinyGPS.satellites();
+  // if (mSat < 255){
+  //   return mSat;
+  // } else {
+  //   return 0;
+  //   }
+  return mTinyGPS.satellites();
   }
 
 bool GPS::feedGPS(SerialPort SerialGPS){
-  while (SerialGPS.available()){
-    if(mTinyGPS.encode(SerialGPS.read()))
-      return true;
-  }
-  return false;
+    while (SerialGPS.available() > 0){
+        char gps_char = SerialGPS.read();
+        Serial.print("tinyGPS encode est: ");
+        Serial.println(mTinyGPS.encode(SerialGPS.read()));
+        Serial.print("le char lu par serialGPS est: ");
+        Serial.println(gps_char);
+        if(mTinyGPS.encode(gps_char)){
+            return true;
+        }
+    }
+    return false;
 }
 
 void GPS::GPSData(){
@@ -82,7 +91,7 @@ RocketPacket GPS::getLocation(RocketPacket rocket_packet, SerialPort GPSPort)
     if(mType == 1){
       rocket_packet.rocketData.latitude1 = mInfosGPS.mLat;
       rocket_packet.rocketData.longitude1 = mInfosGPS.mLong;
-    }else if(mType == 2){
+    } else if(mType == 2){
       rocket_packet.rocketData.latitude2 = mInfosGPS.mLat;
       rocket_packet.rocketData.longitude2 = mInfosGPS.mLong;
     }
