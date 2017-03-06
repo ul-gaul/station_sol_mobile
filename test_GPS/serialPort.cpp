@@ -143,3 +143,4 @@ byte SerialPort::write(byte *buffer, int lenght)
             return 0;
     }
 }
+

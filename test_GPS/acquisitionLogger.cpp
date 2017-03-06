@@ -118,3 +118,4 @@ void AcquisitionLogger::writeRocketData(RocketPacket packet)
     mLoggingFile.println();
     mLoggingFile.flush();
 }
+

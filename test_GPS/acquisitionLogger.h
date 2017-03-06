@@ -1,5 +1,5 @@
 /*
-Fais la gestion de l'enregistrement des donn�es mesur�es par le syst�me d'acquisition
+Fais la gestion de l'enregistrement des donnï¿½es mesurï¿½es par le systï¿½me d'acquisition
 sur une carte SD.
 */
 
@@ -53,3 +53,4 @@ class AcquisitionLogger
         File mLoggingFile;
 };
 #endif
+

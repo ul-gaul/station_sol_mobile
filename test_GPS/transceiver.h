@@ -1,6 +1,6 @@
 /*
- * Fais la gestion des envoi et reception des données de vols sur le port
- * relié au Transceiver (RFD900)
+ * Fais la gestion des envoi et reception des donnÃ©es de vols sur le port
+ * reliÃ© au Transceiver (RFD900)
  * 
  */
 
@@ -13,8 +13,8 @@
 #include "rocketData.h"
 #include "serialPort.h"
 
-#define START_BYTE 's' //Byte de début de buffer d'envoi de données
-#define MAX_READ_BYTES 80 //nombre maximal de bytes à lire jusqu'à lire le START_BYTE
+#define START_BYTE 's' //Byte de dÃ©but de buffer d'envoi de donnÃ©es
+#define MAX_READ_BYTES 80 //nombre maximal de bytes Ã  lire jusqu'Ã  lire le START_BYTE
 
 class Transceiver
 {
@@ -31,6 +31,7 @@ class Transceiver
 };
 
 #endif
+
 
 
 

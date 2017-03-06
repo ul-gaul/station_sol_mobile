@@ -1,7 +1,7 @@
 /*
-  Compas.h - Librarie pour le compas utilit� avec la station au sol Arduino 2016.
-  Cr�er par Alex Tourigny-Plante et Simon Belley, 24 f�vrier 2016.
-  Propri�t� du Groupe a�rospatial de l'Universit� Laval.
+  Compas.h - Librarie pour le compas utilitï¿½ avec la station au sol Arduino 2016.
+  Crï¿½er par Alex Tourigny-Plante et Simon Belley, 24 fï¿½vrier 2016.
+  Propriï¿½tï¿½ du Groupe aï¿½rospatial de l'Universitï¿½ Laval.
 */
 #ifndef GPS_h
 #define GPS_h
@@ -17,7 +17,7 @@ class GPS
     GPS(SerialPort* SerialGPS, int type);
     float getDistance(float lat1, float long1, float lat2, float long2);
     float courseTo(float lat1, float long1, float lat2, float long2);
-    unsigned short int getConnection ();
+    unsigned short int getConnection();
     bool feedGPS(SerialPort SerialGPS);
     void GPSData();
     float getLong();
@@ -42,3 +42,4 @@ class GPS
 };
 
 #endif
+

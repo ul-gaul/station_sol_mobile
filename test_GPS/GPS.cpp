@@ -19,12 +19,12 @@ GPS::GPS(SerialPort* SerialGPS, int type) {
 void GPS::updateCoord(SerialPort SerialGPS)
 {
   Serial.println("updatecoords");
-  // if(feedGPS(SerialGPS)) {
-  //     Serial.println("feedGPS success");
-  //     GPSData();
-  // }
-  // Serial.println("feedGPS fail");
-  GPSData();
+  if(feedGPS(SerialGPS)) {
+      Serial.println("feedGPS success");
+      GPSData();
+  }
+  Serial.println("feedGPS fail");
+  // GPSData();
 }
 
 float GPS::getDistance(float lat1, float long1, float lat2, float long2)
