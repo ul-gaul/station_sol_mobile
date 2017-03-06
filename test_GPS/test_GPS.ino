@@ -89,9 +89,10 @@ void loop(){
 
 bool feed_gps(SerialPort serial_port){
     while (serial_port.available() > 0){
+        int size_available = serial_port.available();
         char gps_char = serial_port.read();
         // Serial.print("tinyGPS encode est: ");
-        myTinyGPS.encode(serial_port.read());
+        // myTinyGPS.encode(serial_port.read());
         // Serial.println(mTinyGPS.encode(SerialGPS.read()));
         // Serial.print("le char lu par serialGPS est: ");
         Serial.println(gps_char);
@@ -100,5 +101,6 @@ bool feed_gps(SerialPort serial_port){
             return true;
         }
     }
+    Serial.println("feed_gps fail");
     return false;
 }
