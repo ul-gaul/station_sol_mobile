@@ -71,17 +71,17 @@ void loop(){
         // write the data from the packet to the SD card
         // sdLogger.writeRocketData(rpktRX);
         // GPS.updateCoord(serialGPS);
-        if(feed_gps(serialGPS)){
-            myTinyGPS.f_get_position(&myDataGPS.latitude, &myDataGPS.longitude, &myDataGPS.age);
-            Serial.print("latitude: ");
-            Serial.print(myDataGPS.latitude);
-            Serial.print(" longitude: ");
-            Serial.print(myDataGPS.longitude);
-            Serial.print(" nombre de satellites: ");
-            Serial.println(myTinyGPS.satellites());
-        }
-        // latitude = GPS.getLat();
-        // longitude = GPS.getLong();
+       
+        myTinyGPS.f_get_position(&myDataGPS.latitude, &myDataGPS.longitude, &myDataGPS.age);
+        Serial.print("latitude: ");
+        Serial.print(myDataGPS.latitude);
+        Serial.print(" longitude: ");
+        Serial.print(myDataGPS.longitude);
+        //Serial.print(" nombre de satellites: ");
+        //Serial.println(myTinyGPS.satellites());
+    
+        //latitude = GPS.getLat();
+        //longitude = GPS.getLong();
         // satellites = GPS.getConnection();
 
     }
