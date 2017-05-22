@@ -1,0 +1,276 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\mabru\Google Drive\Avionique\Design\AltiumDesigner\Projets\_Brouillons\Station au sol 2017\StationSolPortativeV4\StationSolPortative.PcbDoc
+Date     : 2017-05-19
+Time     : 5:34:54 PM
+
+Processing Rule : Clearance Constraint (Gap=2mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 9mil) Between Track (6035mil,2750mil)(6412mil,3127mil) on Top Layer And Pad 74HC4050-16(6335mil,3045mil) on Multi-Layer 
+   Violation between Clearance Constraint: (Collision < 9mil) Between Track (6084.999mil,2550.001mil)(6346mil,2289mil) on Top Layer And Pad 74HC4050-9(6335mil,2345mil) on Multi-Layer 
+   Violation between Clearance Constraint: (Collision < 10mil) Between Track (1749mil,3315mil)(1749mil,3800mil) on Top Layer And Via (1725mil,3345mil) from Top Layer to Botton Layer 
+   Violation between Clearance Constraint: (3.419mil < 10mil) Between Track (1749mil,3315mil)(1800mil,3264mil) on Top Layer And Via (1725mil,3345mil) from Top Layer to Botton Layer 
+   Violation between Clearance Constraint: (1.062mil < 10mil) Between Track (961mil,4650mil)(1239mil,4372mil) on Top Layer And Via (1160mil,4400mil) from Top Layer to Botton Layer 
+   Violation between Clearance Constraint: (Collision < 9mil) Between Track (1056mil,3365mil)(1056mil,3635mil) on Top Layer And Track (898mil,3500mil)(1038.284mil,3500mil) on Top Layer 
+   Violation between Clearance Constraint: (7.284mil < 9mil) Between Track (1088.284mil,3550mil)(1088.284mil,3556mil) on Top Layer And Track (1056mil,3365mil)(1056mil,3635mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 9mil) Between Track (1038.284mil,3500mil)(1088.284mil,3550mil) on Top Layer And Track (1056mil,3365mil)(1056mil,3635mil) on Top Layer 
+Rule Violations :8
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Track (6035mil,2750mil)(6412mil,3127mil) on Top Layer And Pad 74HC4050-16(6335mil,3045mil) on Multi-Layer Location : [X = 7333.388mil][Y = 4046.612mil]
+   Violation between Short-Circuit Constraint: Between Track (6084.999mil,2550.001mil)(6346mil,2289mil) on Top Layer And Pad 74HC4050-9(6335mil,2345mil) on Multi-Layer Location : [X = 7322.885mil][Y = 3332.885mil]
+   Violation between Short-Circuit Constraint: Between Track (1749mil,3315mil)(1749mil,3800mil) on Top Layer And Via (1725mil,3345mil) from Top Layer to Botton Layer Location : [X = 2739.512mil][Y = 4345mil]
+   Violation between Short-Circuit Constraint: Between Track (1056mil,3365mil)(1056mil,3635mil) on Top Layer And Track (898mil,3500mil)(1038.284mil,3500mil) on Top Layer Location : [X = 2049.635mil][Y = 4500mil]
+   Violation between Short-Circuit Constraint: Between Track (1038.284mil,3500mil)(1088.284mil,3550mil) on Top Layer And Track (1056mil,3365mil)(1056mil,3635mil) on Top Layer Location : [X = 2056mil][Y = 4518.094mil]
+Rule Violations :5
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net Out Mosi Between Pad 74HC4050-6(6035mil,2545mil) on Multi-Layer And Track (6084.999mil,2550.001mil)(6346mil,2289mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1915mil,4475mil) from Top Layer to Botton Layer And Pad C21-1(2000mil,4475mil) on Botton Layer 
+Rule Violations :2
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=15mil) (Max=40mil) (Preferred=20mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=5mil) (Max=100mil) (All)
+   Violation between Hole Size Constraint: (126mil > 100mil) Pad Batt-holder-0(455mil,490mil) on Multi-Layer Actual Hole Size = 126mil
+   Violation between Hole Size Constraint: (126mil > 100mil) Pad Batt-holder-0(1205mil,490mil) on Multi-Layer Actual Hole Size = 126mil
+   Violation between Hole Size Constraint: (126mil > 100mil) Pad Batt-holder-0(1990mil,490mil) on Multi-Layer Actual Hole Size = 126mil
+   Violation between Hole Size Constraint: (126mil > 100mil) Pad Batt-holder-0(1990mil,2680mil) on Multi-Layer Actual Hole Size = 126mil
+   Violation between Hole Size Constraint: (126mil > 100mil) Pad Batt-holder-0(1230mil,2680mil) on Multi-Layer Actual Hole Size = 126mil
+   Violation between Hole Size Constraint: (126mil > 100mil) Pad Batt-holder-0(470mil,2680mil) on Multi-Layer Actual Hole Size = 126mil
+   Violation between Hole Size Constraint: (125.984mil > 100mil) Pad RFD-0(4775mil,2915mil) on Multi-Layer Actual Hole Size = 125.984mil
+   Violation between Hole Size Constraint: (125.984mil > 100mil) Pad Arduino-99(3450mil,225mil) on Multi-Layer Actual Hole Size = 125.984mil
+   Violation between Hole Size Constraint: (125.984mil > 100mil) Pad Arduino-99(3200mil,2125mil) on Multi-Layer Actual Hole Size = 125.984mil
+   Violation between Hole Size Constraint: (125.984mil > 100mil) Pad Arduino-99(4400mil,1925mil) on Multi-Layer Actual Hole Size = 125.984mil
+   Violation between Hole Size Constraint: (125.984mil > 100mil) Pad Arduino-99(4400mil,825mil) on Multi-Layer Actual Hole Size = 125.984mil
+   Violation between Hole Size Constraint: (125.984mil > 100mil) Pad Arduino-99(6450mil,2125mil) on Multi-Layer Actual Hole Size = 125.984mil
+   Violation between Hole Size Constraint: (125.984mil > 100mil) Pad Arduino-99(6400mil,225mil) on Multi-Layer Actual Hole Size = 125.984mil
+   Violation between Hole Size Constraint: (125mil > 100mil) Pad gps-7(5030mil,3730mil) on Multi-Layer Actual Hole Size = 125mil
+   Violation between Hole Size Constraint: (125mil > 100mil) Pad gps-7(5030mil,4480mil) on Multi-Layer Actual Hole Size = 125mil
+   Violation between Hole Size Constraint: (125mil > 100mil) Pad gps-7(3780mil,4480mil) on Multi-Layer Actual Hole Size = 125mil
+   Violation between Hole Size Constraint: (105mil > 100mil) Pad Compas-10(6445mil,4300mil) on Multi-Layer Actual Hole Size = 105mil
+   Violation between Hole Size Constraint: (105mil > 100mil) Pad Compas-11(7005mil,4300mil) on Multi-Layer Actual Hole Size = 105mil
+Rule Violations :18
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (8.477mil < 10mil) Between Pad Bat-prot3-2(140.3mil,3354.488mil) on Botton Layer And Pad Free-0(102.898mil,3314.102mil) on Multi-Layer [Bottom Solder] Mask Sliver [8.477mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.354mil < 10mil) Between Pad Bat-prot3-6(102.898mil,3260mil) on Botton Layer And Pad Free-0(102.898mil,3314.102mil) on Multi-Layer [Bottom Solder] Mask Sliver [8.354mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (1.387mil < 10mil) Between Via (984mil,4165mil) from Top Layer to Botton Layer And Pad R11-3(935mil,4190mil) on Multi-Layer [Top Solder] Mask Sliver [1.387mil] / [Bottom Solder] Mask Sliver [1.387mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (6.362mil < 10mil) Between Via (6725mil,2840mil) from Top Layer to Botton Layer And Pad SDsocket-8(6660.586mil,2883.228mil) on Top Layer [Top Solder] Mask Sliver [6.362mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.306mil < 10mil) Between Pad SDsocket-7(6660.586mil,2839.922mil) on Top Layer And Pad SDsocket-8(6660.586mil,2883.228mil) on Top Layer [Top Solder] Mask Sliver [5.306mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.308mil < 10mil) Between Pad SDsocket-6(6660.586mil,2796.614mil) on Top Layer And Pad SDsocket-7(6660.586mil,2839.922mil) on Top Layer [Top Solder] Mask Sliver [5.308mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (6.484mil < 10mil) Between Via (6725mil,2840mil) from Top Layer to Botton Layer And Pad SDsocket-6(6660.586mil,2796.614mil) on Top Layer [Top Solder] Mask Sliver [6.484mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.306mil < 10mil) Between Pad SDsocket-5(6660.586mil,2753.308mil) on Top Layer And Pad SDsocket-6(6660.586mil,2796.614mil) on Top Layer [Top Solder] Mask Sliver [5.306mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.308mil < 10mil) Between Pad SDsocket-4(6660.586mil,2710mil) on Top Layer And Pad SDsocket-5(6660.586mil,2753.308mil) on Top Layer [Top Solder] Mask Sliver [5.308mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.936mil < 10mil) Between Pad SDsocket-3(6660.586mil,2666.064mil) on Top Layer And Pad SDsocket-4(6660.586mil,2710mil) on Top Layer [Top Solder] Mask Sliver [5.936mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5mil < 10mil) Between Pad SDsocket-2(6660.586mil,2623.064mil) on Top Layer And Pad SDsocket-3(6660.586mil,2666.064mil) on Top Layer [Top Solder] Mask Sliver [5mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5mil < 10mil) Between Pad SDsocket-1(6660.586mil,2580.064mil) on Top Layer And Pad SDsocket-2(6660.586mil,2623.064mil) on Top Layer [Top Solder] Mask Sliver [5mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.5mil < 10mil) Between Via (1266mil,3597mil) from Top Layer to Botton Layer And Pad C17-minus(1460mil,3500mil) on Top Layer [Top Solder] Mask Sliver [8.5mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (9.5mil < 10mil) Between Via (1265mil,3458mil) from Top Layer to Botton Layer And Pad C17-minus(1460mil,3500mil) on Top Layer [Top Solder] Mask Sliver [9.5mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.992mil < 10mil) Between Via (758mil,4601.724mil) from Top Layer to Botton Layer And Pad D2-1(729.056mil,4500mil) on Top Layer [Top Solder] Mask Sliver [4.992mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.504mil < 10mil) Between Via (489.764mil,4605.236mil) from Top Layer to Botton Layer And Pad D2-3(460.944mil,4500mil) on Top Layer [Top Solder] Mask Sliver [8.504mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.819mil < 10mil) Between Via (2240mil,4455mil) from Top Layer to Botton Layer And Pad C6-1(2150mil,4456.85mil) on Botton Layer [Bottom Solder] Mask Sliver [8.819mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5mil < 10mil) Between Via (1915mil,4475mil) from Top Layer to Botton Layer And Pad C23-1(1850mil,4475mil) on Botton Layer [Bottom Solder] Mask Sliver [5mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.369mil < 10mil) Between Via (489.764mil,4605.236mil) from Top Layer to Botton Layer And Pad C8-2(540mil,4555mil) on Botton Layer [Bottom Solder] Mask Sliver [2.369mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.133mil < 10mil) Between Via (1725mil,3345mil) from Top Layer to Botton Layer And Pad Q12-1(1798.426mil,3355mil) on Botton Layer [Bottom Solder] Mask Sliver [5.133mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.747mil < 10mil) Between Pad Bat-prot1-2(1392.7mil,3335mil) on Botton Layer And Pad Bat-prot1-1(1355.3mil,3335mil) on Botton Layer [Bottom Solder] Mask Sliver [5.747mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.214mil < 10mil) Between Via (1430.102mil,3295mil) from Top Layer to Botton Layer And Pad Bat-prot1-2(1392.7mil,3335mil) on Botton Layer [Bottom Solder] Mask Sliver [8.214mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.749mil < 10mil) Between Pad Bat-prot1-3(1430.102mil,3335mil) on Botton Layer And Pad Bat-prot1-2(1392.7mil,3335mil) on Botton Layer [Bottom Solder] Mask Sliver [5.749mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.747mil < 10mil) Between Pad Bat-prot1-5(1392.7mil,3240.512mil) on Botton Layer And Pad Bat-prot1-6(1355.3mil,3240.512mil) on Botton Layer [Bottom Solder] Mask Sliver [5.747mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.749mil < 10mil) Between Pad Bat-prot1-4(1430.102mil,3240.512mil) on Botton Layer And Pad Bat-prot1-5(1392.7mil,3240.512mil) on Botton Layer [Bottom Solder] Mask Sliver [5.749mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.74mil < 10mil) Between Via (1430.102mil,3295mil) from Top Layer to Botton Layer And Pad Bat-prot1-4(1430.102mil,3240.512mil) on Botton Layer [Bottom Solder] Mask Sliver [8.74mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.749mil < 10mil) Between Pad Bat-prot2-2(755.3mil,3334.488mil) on Botton Layer And Pad Bat-prot2-1(717.898mil,3334.488mil) on Botton Layer [Bottom Solder] Mask Sliver [5.749mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.473mil < 10mil) Between Via (718mil,3294mil) from Top Layer to Botton Layer And Pad Bat-prot2-2(755.3mil,3334.488mil) on Botton Layer [Bottom Solder] Mask Sliver [8.473mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.747mil < 10mil) Between Pad Bat-prot2-3(792.7mil,3334.488mil) on Botton Layer And Pad Bat-prot2-2(755.3mil,3334.488mil) on Botton Layer [Bottom Solder] Mask Sliver [5.747mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (8.252mil < 10mil) Between Via (718mil,3294mil) from Top Layer to Botton Layer And Pad Bat-prot2-6(717.898mil,3240mil) on Botton Layer [Bottom Solder] Mask Sliver [8.252mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.749mil < 10mil) Between Pad Bat-prot2-5(755.3mil,3240mil) on Botton Layer And Pad Bat-prot2-6(717.898mil,3240mil) on Botton Layer [Bottom Solder] Mask Sliver [5.749mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.747mil < 10mil) Between Pad Bat-prot2-4(792.7mil,3240mil) on Botton Layer And Pad Bat-prot2-5(755.3mil,3240mil) on Botton Layer [Bottom Solder] Mask Sliver [5.747mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.749mil < 10mil) Between Pad Bat-prot3-2(140.3mil,3354.488mil) on Botton Layer And Pad Bat-prot3-1(102.898mil,3354.488mil) on Botton Layer [Bottom Solder] Mask Sliver [5.749mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.747mil < 10mil) Between Pad Bat-prot3-3(177.7mil,3354.488mil) on Botton Layer And Pad Bat-prot3-2(140.3mil,3354.488mil) on Botton Layer [Bottom Solder] Mask Sliver [5.747mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.749mil < 10mil) Between Pad Bat-prot3-5(140.3mil,3260mil) on Botton Layer And Pad Bat-prot3-6(102.898mil,3260mil) on Botton Layer [Bottom Solder] Mask Sliver [5.749mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.747mil < 10mil) Between Pad Bat-prot3-4(177.7mil,3260mil) on Botton Layer And Pad Bat-prot3-5(140.3mil,3260mil) on Botton Layer [Bottom Solder] Mask Sliver [5.747mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (4.776mil < 10mil) Between Via (1266mil,3597mil) from Top Layer to Botton Layer And Pad Q21-2(1193.426mil,3585mil) on Botton Layer [Bottom Solder] Mask Sliver [4.776mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (9.825mil < 10mil) Between Via (1265mil,3458mil) from Top Layer to Botton Layer And Pad Q21-4(1193.426mil,3485mil) on Botton Layer [Bottom Solder] Mask Sliver [9.825mil]
+Rule Violations :38
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Arc (84.197mil,3307.244mil) on Bottom Overlay And Pad Free-0(102.898mil,3314.102mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (9.478mil < 10mil) Between Track (446.692mil,3461.574mil)(533.306mil,3461.574mil) on Bottom Overlay And Pad Free-1(490mil,3500mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [9.478mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (1.295mil < 10mil) Between Track (83.898mil,3287.488mil)(83.898mil,3297.488mil) on Bottom Overlay And Pad Free-0(102.898mil,3314.102mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [1.295mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (84.196mil,3316.488mil)(84.196mil,3326.488mil) on Bottom Overlay And Pad Free-0(102.898mil,3314.102mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (2.668mil < 10mil) Between Track (83.898mil,3287.488mil)(196.402mil,3287.488mil) on Bottom Overlay And Pad Free-0(102.898mil,3314.102mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [2.668mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (84.196mil,3326.488mil)(196.402mil,3326.488mil) on Bottom Overlay And Pad Free-0(102.898mil,3314.102mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.878mil < 10mil) Between Track (915mil,4422.5mil)(915mil,4607.5mil) on Bottom Overlay And Pad R11-1(935mil,4390mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [3.878mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (3.878mil < 10mil) Between Track (915mil,4422.5mil)(975mil,4422.5mil) on Bottom Overlay And Pad R11-1(935mil,4390mil) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [3.878mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (4875mil,2315mil)(4875mil,3515mil) on Top Overlay And Pad RFD-0(4775mil,2915mil) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Area Fill (6794.444mil,2898.976mil) (6818.066mil,3048.582mil) on Top Overlay And Pad SDsocket-PAD.(6680.272mil,2965.906mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (5.054mil < 10mil) Between Track (6739.326mil,2977.716mil)(7188.68mil,2977.716mil) on Top Overlay And Pad SDsocket-PAD.(6680.272mil,2965.906mil) on Top Layer [Top Overlay] to [Top Solder] clearance [5.054mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Area Fill (6794.256mil,2363.26mil) (6818.256mil,2512.866mil) on Top Overlay And Pad SDsocket-PAD(6680.272mil,2440.064mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (5.054mil < 10mil) Between Track (6739.326mil,2434.064mil)(7188.68mil,2434.064mil) on Top Overlay And Pad SDsocket-PAD(6680.272mil,2440.064mil) on Top Layer [Top Overlay] to [Top Solder] clearance [5.054mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.953mil < 10mil) Between Track (2045mil,4065mil)(2045mil,4340mil) on Top Overlay And Pad L4-1(2175mil,4284.646mil) on Top Layer [Top Overlay] to [Top Solder] clearance [7.953mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.953mil < 10mil) Between Track (2305mil,4065mil)(2305mil,4340mil) on Top Overlay And Pad L4-1(2175mil,4284.646mil) on Top Layer [Top Overlay] to [Top Solder] clearance [7.953mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.953mil < 10mil) Between Track (2045mil,4065mil)(2045mil,4340mil) on Top Overlay And Pad L4-2(2175mil,4115.354mil) on Top Layer [Top Overlay] to [Top Solder] clearance [7.953mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.953mil < 10mil) Between Track (2305mil,4065mil)(2305mil,4340mil) on Top Overlay And Pad L4-2(2175mil,4115.354mil) on Top Layer [Top Overlay] to [Top Solder] clearance [7.953mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.047mil < 10mil) Between Track (2045mil,4065mil)(2305mil,4065mil) on Top Overlay And Pad L4-2(2175mil,4115.354mil) on Top Layer [Top Overlay] to [Top Solder] clearance [7.047mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (1195mil,3427mil)(1728mil,3427mil) on Top Overlay And Pad C17-minus(1460mil,3500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (1195mil,3959mil)(1728mil,3959mil) on Top Overlay And Pad C17-plus(1459mil,3887mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (615mil,3427mil)(1148mil,3427mil) on Top Overlay And Pad C7-minus(880mil,3500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (615mil,3959mil)(1148mil,3959mil) on Top Overlay And Pad C7-plus(879mil,3887mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (2.364mil < 10mil) Between Text "Btn Alim" (2145mil,3165mil) on Top Overlay And Pad C22-minus(2040mil,3500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [2.364mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (1775mil,3427mil)(2308mil,3427mil) on Top Overlay And Pad C22-minus(2040mil,3500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (1775mil,3959mil)(2308mil,3959mil) on Top Overlay And Pad C22-plus(2039mil,3887mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.5mil < 10mil) Between Track (7000mil,125mil)(7000mil,2225mil) on Top Overlay And Pad Rled-1(6960mil,2155mil) on Top Layer [Top Overlay] to [Top Solder] clearance [7.5mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.5mil < 10mil) Between Track (7000mil,125mil)(7000mil,2225mil) on Top Overlay And Pad Rled-2(6960mil,2075mil) on Top Layer [Top Overlay] to [Top Solder] clearance [7.5mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (9.982mil < 10mil) Between Track (7090.784mil,2235.476mil)(7114.406mil,2259.098mil) on Top Overlay And Pad LpowerG-2(7139.996mil,2203.98mil) on Top Layer [Top Overlay] to [Top Solder] clearance [9.982mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (9.983mil < 10mil) Between Track (7165.588mil,2259.098mil)(7189.21mil,2235.476mil) on Top Overlay And Pad LpowerG-2(7139.996mil,2203.98mil) on Top Layer [Top Overlay] to [Top Solder] clearance [9.983mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.424mil < 10mil) Between Track (780mil,4365mil)(780mil,4585mil) on Top Overlay And Pad D2-1(729.056mil,4500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [8.424mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.424mil < 10mil) Between Track (410mil,4365mil)(410mil,4480.67mil) on Top Overlay And Pad D2-3(460.944mil,4500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [8.424mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.424mil < 10mil) Between Track (410mil,4480.67mil)(410mil,4635mil) on Top Overlay And Pad D2-3(460.944mil,4500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [8.424mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (136.574mil,4398.544mil)(136.574mil,4591.456mil) on Top Overlay And Pad L3-2(235mil,4384.764mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (333.426mil,4398.544mil)(333.426mil,4591.456mil) on Top Overlay And Pad L3-2(235mil,4384.764mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (136.574mil,4398.544mil)(333.426mil,4398.544mil) on Top Overlay And Pad L3-2(235mil,4384.764mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (136.574mil,4398.544mil)(136.574mil,4591.456mil) on Top Overlay And Pad L3-1(235mil,4605.236mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (333.426mil,4398.544mil)(333.426mil,4591.456mil) on Top Overlay And Pad L3-1(235mil,4605.236mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (136.574mil,4591.456mil)(235mil,4591.456mil) on Top Overlay And Pad L3-1(235mil,4605.236mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (235mil,4591.456mil)(333.426mil,4591.456mil) on Top Overlay And Pad L3-1(235mil,4605.236mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (35mil,3427mil)(568mil,3427mil) on Top Overlay And Pad C5-minus(300mil,3500mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Track (35mil,3959mil)(568mil,3959mil) on Top Overlay And Pad C5-plus(299mil,3887mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.315mil < 10mil) Between Track (1336.598mil,3307mil)(1448.804mil,3307mil) on Bottom Overlay And Pad Bat-prot1-1(1355.3mil,3335mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.315mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.311mil < 10mil) Between Track (1336.598mil,3307mil)(1448.804mil,3307mil) on Bottom Overlay And Pad Bat-prot1-2(1392.7mil,3335mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.311mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.311mil < 10mil) Between Track (1336.598mil,3307mil)(1448.804mil,3307mil) on Bottom Overlay And Pad Bat-prot1-3(1430.102mil,3335mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.311mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (1336.3mil,3268mil)(1448.804mil,3268mil) on Bottom Overlay And Pad Bat-prot1-6(1355.3mil,3240.512mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (1336.3mil,3268mil)(1448.804mil,3268mil) on Bottom Overlay And Pad Bat-prot1-5(1392.7mil,3240.512mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (1336.3mil,3268mil)(1448.804mil,3268mil) on Bottom Overlay And Pad Bat-prot1-4(1430.102mil,3240.512mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.315mil < 10mil) Between Track (699.196mil,3306.488mil)(811.402mil,3306.488mil) on Bottom Overlay And Pad Bat-prot2-1(717.898mil,3334.488mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.315mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.311mil < 10mil) Between Track (699.196mil,3306.488mil)(811.402mil,3306.488mil) on Bottom Overlay And Pad Bat-prot2-2(755.3mil,3334.488mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.311mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.311mil < 10mil) Between Track (699.196mil,3306.488mil)(811.402mil,3306.488mil) on Bottom Overlay And Pad Bat-prot2-3(792.7mil,3334.488mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.311mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (698.898mil,3267.488mil)(811.402mil,3267.488mil) on Bottom Overlay And Pad Bat-prot2-6(717.898mil,3240mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (698.898mil,3267.488mil)(811.402mil,3267.488mil) on Bottom Overlay And Pad Bat-prot2-5(755.3mil,3240mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (698.898mil,3267.488mil)(811.402mil,3267.488mil) on Bottom Overlay And Pad Bat-prot2-4(792.7mil,3240mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.315mil < 10mil) Between Track (84.196mil,3326.488mil)(196.402mil,3326.488mil) on Bottom Overlay And Pad Bat-prot3-1(102.898mil,3354.488mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.315mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.311mil < 10mil) Between Track (84.196mil,3326.488mil)(196.402mil,3326.488mil) on Bottom Overlay And Pad Bat-prot3-2(140.3mil,3354.488mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.311mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (8.311mil < 10mil) Between Track (84.196mil,3326.488mil)(196.402mil,3326.488mil) on Bottom Overlay And Pad Bat-prot3-3(177.7mil,3354.488mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [8.311mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (83.898mil,3287.488mil)(196.402mil,3287.488mil) on Bottom Overlay And Pad Bat-prot3-6(102.898mil,3260mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (83.898mil,3287.488mil)(196.402mil,3287.488mil) on Bottom Overlay And Pad Bat-prot3-5(140.3mil,3260mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (7.799mil < 10mil) Between Track (83.898mil,3287.488mil)(196.402mil,3287.488mil) on Bottom Overlay And Pad Bat-prot3-4(177.7mil,3260mil) on Botton Layer [Bottom Overlay] to [Bottom Solder] clearance [7.799mil]
+Rule Violations :59
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (8.563mil < 10mil) Between Text "U2" (1388.465mil,4320mil) on Bottom Overlay And Arc (1366.732mil,4305mil) on Bottom Overlay Silk Text to Silk Clearance [8.563mil]
+   Violation between Silk To Silk Clearance Constraint: (3.563mil < 10mil) Between Text "U1" (615mil,4280mil) on Bottom Overlay And Arc (596.732mil,4270mil) on Bottom Overlay Silk Text to Silk Clearance [3.563mil]
+   Violation between Silk To Silk Clearance Constraint: (8.563mil < 10mil) Between Text "L4" (2055mil,4355mil) on Top Overlay And Track (2045mil,4340mil)(2210.67mil,4340mil) on Top Overlay Silk Text to Silk Clearance [8.563mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "F1" (2375mil,3895mil) on Top Overlay And Track (2385mil,3785mil)(2385mil,4185mil) on Top Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "Btn4" (2775mil,1910mil) on Top Overlay And Track (2720mil,1897.5mil)(2920mil,1897.5mil) on Top Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "Btn3" (2520mil,1910mil) on Top Overlay And Track (2470mil,1897.5mil)(2670mil,1897.5mil) on Top Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (3.563mil < 10mil) Between Text "R11" (1045mil,4325mil) on Top Overlay And Track (1035mil,4090mil)(1035mil,4490mil) on Top Overlay Silk Text to Silk Clearance [3.563mil]
+   Violation between Silk To Silk Clearance Constraint: (8.563mil < 10mil) Between Text "D2" (560mil,4650mil) on Top Overlay And Track (410mil,4635mil)(730mil,4635mil) on Top Overlay Silk Text to Silk Clearance [8.563mil]
+   Violation between Silk To Silk Clearance Constraint: (5.137mil < 10mil) Between Text "L3" (125mil,4475mil) on Top Overlay And Track (136.574mil,4398.544mil)(136.574mil,4591.456mil) on Top Overlay Silk Text to Silk Clearance [5.137mil]
+   Violation between Silk To Silk Clearance Constraint: (9.295mil < 10mil) Between Text "Recran" (2730mil,215mil) on Top Overlay And Track (2907.5mil,140mil)(2907.5mil,200mil) on Top Overlay Silk Text to Silk Clearance [9.295mil]
+   Violation between Silk To Silk Clearance Constraint: (7.5mil < 10mil) Between Text "Recran" (2730mil,215mil) on Top Overlay And Track (2722.5mil,200mil)(2907.5mil,200mil) on Top Overlay Silk Text to Silk Clearance [7.5mil]
+   Violation between Silk To Silk Clearance Constraint: (9.271mil < 10mil) Between Text "Recran" (2730mil,215mil) on Top Overlay And Track (2722.5mil,80mil)(2722.5mil,200mil) on Top Overlay Silk Text to Silk Clearance [9.271mil]
+   Violation between Silk To Silk Clearance Constraint: (2.063mil < 10mil) Between Text "20" (2790mil,1360mil) on Top Overlay And Track (2720mil,1350mil)(2920mil,1350mil) on Top Overlay Silk Text to Silk Clearance [2.063mil]
+   Violation between Silk To Silk Clearance Constraint: (2.063mil < 10mil) Between Text "19" (2890mil,1360mil) on Top Overlay And Track (2720mil,1350mil)(2920mil,1350mil) on Top Overlay Silk Text to Silk Clearance [2.063mil]
+   Violation between Silk To Silk Clearance Constraint: (8.74mil < 10mil) Between Text "2" (2790mil,300mil) on Top Overlay And Track (2720mil,350mil)(2920mil,350mil) on Top Overlay Silk Text to Silk Clearance [8.74mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "29" (3125mil,650mil) on Top Overlay And Track (3000mil,725mil)(3100mil,625mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (1.15mil < 10mil) Between Text "5V" (3125mil,250mil) on Top Overlay And Track (3100mil,225mil)(3100mil,625mil) on Top Overlay Silk Text to Silk Clearance [1.15mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "23" (3125mil,350mil) on Top Overlay And Track (3100mil,225mil)(3100mil,625mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "29" (3125mil,650mil) on Top Overlay And Track (3100mil,225mil)(3100mil,625mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (5.862mil < 10mil) Between Text "27" (3125mil,550mil) on Top Overlay And Track (3100mil,225mil)(3100mil,625mil) on Top Overlay Silk Text to Silk Clearance [5.862mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "25" (3125mil,450mil) on Top Overlay And Track (3100mil,225mil)(3100mil,625mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "5V" (3125mil,250mil) on Top Overlay And Track (3100mil,225mil)(3200mil,125mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "Rled" (6910mil,2225mil) on Top Overlay And Track (7000mil,125mil)(7000mil,2225mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 10mil) Between Text "Rled" (6910mil,2225mil) on Top Overlay And Track (3100mil,2225mil)(7000mil,2225mil) on Top Overlay Silk Text to Silk Clearance [0mil]
+   Violation between Silk To Silk Clearance Constraint: (3.362mil < 10mil) Between Text "5V" (3125mil,250mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [3.362mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "23" (3125mil,350mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "29" (3125mil,650mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "31" (3125mil,750mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "37" (3125mil,1050mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "39" (3125mil,1150mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (3.362mil < 10mil) Between Text "53" (3125mil,1850mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [3.362mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "GND" (3125mil,1950mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "27" (3125mil,550mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "25" (3125mil,450mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "35" (3125mil,950mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (5.719mil < 10mil) Between Text "33" (3125mil,850mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [5.719mil]
+   Violation between Silk To Silk Clearance Constraint: (3.362mil < 10mil) Between Text "51" (3125mil,1750mil) on Top Overlay And Track (3150mil,200mil)(3150mil,1975mil) on Top Overlay Silk Text to Silk Clearance [3.362mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C4" (2070mil,1795mil) on Bottom Overlay And Track (1985mil,1782.5mil)(2045mil,1782.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C4" (2070mil,1795mil) on Bottom Overlay And Track (2045mil,1782.5mil)(2105mil,1782.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R10" (2160mil,1695mil) on Bottom Overlay And Track (2172.5mil,1600mil)(2172.5mil,1720mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R4" (2160mil,1830mil) on Bottom Overlay And Track (2172.5mil,1750mil)(2172.5mil,1870mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C3" (1665mil,1795mil) on Bottom Overlay And Track (1575mil,1782.5mil)(1635mil,1782.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C3" (1665mil,1795mil) on Bottom Overlay And Track (1635mil,1782.5mil)(1695mil,1782.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R9" (1745mil,1690mil) on Bottom Overlay And Track (1757.5mil,1600mil)(1757.5mil,1720mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R3" (1745mil,1835mil) on Bottom Overlay And Track (1757.5mil,1750mil)(1757.5mil,1870mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R8" (2160mil,2065mil) on Bottom Overlay And Track (2172.5mil,1980mil)(2172.5mil,2100mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R2" (2160mil,2215mil) on Bottom Overlay And Track (2172.5mil,2130mil)(2172.5mil,2250mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R1" (1745mil,2215mil) on Bottom Overlay And Track (1757.5mil,2130mil)(1757.5mil,2250mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R7" (1745mil,2070mil) on Bottom Overlay And Track (1757.5mil,1980mil)(1757.5mil,2100mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C1" (1655mil,2175mil) on Bottom Overlay And Track (1575mil,2162.5mil)(1635mil,2162.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C1" (1655mil,2175mil) on Bottom Overlay And Track (1635mil,2162.5mil)(1695mil,2162.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C16" (1975mil,4310mil) on Bottom Overlay And Track (1875mil,4297.5mil)(1995mil,4297.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R15" (1825mil,4310mil) on Bottom Overlay And Track (1785mil,4297.5mil)(1845mil,4297.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R15" (1825mil,4310mil) on Bottom Overlay And Track (1725mil,4297.5mil)(1785mil,4297.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R16" (1675mil,4310mil) on Bottom Overlay And Track (1640mil,4297.5mil)(1700mil,4297.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R16" (1675mil,4310mil) on Bottom Overlay And Track (1580mil,4297.5mil)(1640mil,4297.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C21" (2035mil,4620mil) on Bottom Overlay And Track (1940mil,4607.5mil)(2060mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C23" (1890mil,4620mil) on Bottom Overlay And Track (1790mil,4607.5mil)(1910mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C19" (1595mil,4620mil) on Bottom Overlay And Track (1495mil,4607.5mil)(1615mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C18" (1450mil,4620mil) on Bottom Overlay And Track (1350mil,4607.5mil)(1470mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R14" (1735mil,4620mil) on Bottom Overlay And Track (1640mil,4607.5mil)(1760mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (8.563mil < 10mil) Between Text "U2" (1388.465mil,4320mil) on Bottom Overlay And Track (1379.232mil,4305mil)(1422.442mil,4305mil) on Bottom Overlay Silk Text to Silk Clearance [8.563mil]
+   Violation between Silk To Silk Clearance Constraint: (8.563mil < 10mil) Between Text "U2" (1388.465mil,4320mil) on Bottom Overlay And Track (1311.024mil,4305mil)(1354.232mil,4305mil) on Bottom Overlay Silk Text to Silk Clearance [8.563mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C15" (1305mil,4620mil) on Bottom Overlay And Track (1205mil,4607.5mil)(1265mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C15" (1305mil,4620mil) on Bottom Overlay And Track (1265mil,4607.5mil)(1325mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C9" (710mil,4620mil) on Bottom Overlay And Track (625mil,4607.5mil)(745mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C8" (565mil,4620mil) on Bottom Overlay And Track (480mil,4607.5mil)(600mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C12" (870mil,4620mil) on Bottom Overlay And Track (770mil,4607.5mil)(890mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (3.563mil < 10mil) Between Text "U1" (615mil,4280mil) on Bottom Overlay And Track (609.232mil,4270mil)(652.442mil,4270mil) on Bottom Overlay Silk Text to Silk Clearance [3.563mil]
+   Violation between Silk To Silk Clearance Constraint: (3.563mil < 10mil) Between Text "U1" (615mil,4280mil) on Bottom Overlay And Track (541.024mil,4270mil)(584.232mil,4270mil) on Bottom Overlay Silk Text to Silk Clearance [3.563mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R13" (310mil,4295mil) on Bottom Overlay And Track (210mil,4282.5mil)(330mil,4282.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R6" (1105mil,4310mil) on Bottom Overlay And Track (1085mil,4297.5mil)(1145mil,4297.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R6" (1105mil,4310mil) on Bottom Overlay And Track (1025mil,4297.5mil)(1085mil,4297.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C13" (165mil,4295mil) on Bottom Overlay And Track (65mil,4282.5mil)(185mil,4282.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R12" (1160mil,4620mil) on Bottom Overlay And Track (1120mil,4607.5mil)(1180mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "R12" (1160mil,4620mil) on Bottom Overlay And Track (1060mil,4607.5mil)(1120mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (5mil < 10mil) Between Text "C14" (1015mil,4620mil) on Bottom Overlay And Track (915mil,4607.5mil)(1035mil,4607.5mil) on Bottom Overlay Silk Text to Silk Clearance [5mil]
+   Violation between Silk To Silk Clearance Constraint: (8.504mil < 10mil) Between Text "Cprot1" (1875mil,3940mil) on Bottom Overlay And Track (1855mil,3732.5mil)(1855mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [8.504mil]
+   Violation between Silk To Silk Clearance Constraint: (5.003mil < 10mil) Between Text "Cprot1" (1875mil,3940mil) on Bottom Overlay And Track (1735mil,3917.5mil)(1855mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.003mil]
+   Violation between Silk To Silk Clearance Constraint: (5.003mil < 10mil) Between Text "Rprot11" (1695mil,3940mil) on Bottom Overlay And Track (1605mil,3917.5mil)(1665mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.003mil]
+   Violation between Silk To Silk Clearance Constraint: (5.003mil < 10mil) Between Text "Rprot11" (1695mil,3940mil) on Bottom Overlay And Track (1665mil,3732.5mil)(1665mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.003mil]
+   Violation between Silk To Silk Clearance Constraint: (8.504mil < 10mil) Between Text "Cprot2" (1275mil,3940mil) on Bottom Overlay And Track (1255mil,3732.5mil)(1255mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [8.504mil]
+   Violation between Silk To Silk Clearance Constraint: (5.003mil < 10mil) Between Text "Cprot2" (1275mil,3940mil) on Bottom Overlay And Track (1135mil,3917.5mil)(1255mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.003mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot21" (1090mil,3940mil) on Bottom Overlay And Track (995mil,3917.5mil)(1055mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot21" (1090mil,3940mil) on Bottom Overlay And Track (1055mil,3732.5mil)(1055mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+   Violation between Silk To Silk Clearance Constraint: (8.516mil < 10mil) Between Text "Rprot12" (1505mil,3670mil) on Bottom Overlay And Track (1405mil,3647.5mil)(1465mil,3647.5mil) on Bottom Overlay Silk Text to Silk Clearance [8.516mil]
+   Violation between Silk To Silk Clearance Constraint: (8.516mil < 10mil) Between Text "Rprot12" (1505mil,3670mil) on Bottom Overlay And Track (1465mil,3462.5mil)(1465mil,3647.5mil) on Bottom Overlay Silk Text to Silk Clearance [8.516mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot22" (850mil,3670mil) on Bottom Overlay And Track (755mil,3647.5mil)(815mil,3647.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot22" (850mil,3670mil) on Bottom Overlay And Track (815mil,3462.5mil)(815mil,3647.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot32" (235mil,3670mil) on Bottom Overlay And Track (140mil,3647.5mil)(200mil,3647.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot32" (235mil,3670mil) on Bottom Overlay And Track (200mil,3462.5mil)(200mil,3647.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+   Violation between Silk To Silk Clearance Constraint: (8.504mil < 10mil) Between Text "Cprot3" (670mil,3940mil) on Bottom Overlay And Track (650mil,3732.5mil)(650mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [8.504mil]
+   Violation between Silk To Silk Clearance Constraint: (5.003mil < 10mil) Between Text "Cprot3" (670mil,3940mil) on Bottom Overlay And Track (590mil,3917.5mil)(650mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.003mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot31" (485mil,3940mil) on Bottom Overlay And Track (390mil,3917.5mil)(450mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+   Violation between Silk To Silk Clearance Constraint: (5.97mil < 10mil) Between Text "Rprot31" (485mil,3940mil) on Bottom Overlay And Track (450mil,3732.5mil)(450mil,3917.5mil) on Bottom Overlay Silk Text to Silk Clearance [5.97mil]
+Rule Violations :95
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Track (1038.284mil,3500mil)(1088.284mil,3550mil) on Top Layer 
+   Violation between Net Antennae: Track (2040mil,3500mil)(2220.5mil,3500mil) on Top Layer 
+   Violation between Net Antennae: Track (7083.5mil,2203.98mil)(7139.996mil,2203.98mil) on Top Layer 
+   Violation between Net Antennae: Track (6084.999mil,2550.001mil)(6346mil,2289mil) on Top Layer 
+Rule Violations :4
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 229
+Time Elapsed        : 00:00:04
