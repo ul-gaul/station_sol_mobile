@@ -1,20 +1,18 @@
-#include <SoftwareSerial.h>
-
 #include <TinyGPS.h>
-
+#include "Arduino.h"
 /* This sample code demonstrates the normal use of a TinyGPS object.
-   It requires the use of SoftwareSerial, and assumes that you have a
+   It requires the use of SoftwareSerial, and aSerial2umes that you have a
    4800-baud serial GPS device hooked up on pins 4(rx) and 3(tx).
 */
 
 TinyGPS gps;
-SoftwareSerial ss(4, 3);
+
 
 void setup()
 {
-  Serial.begin(115200);
-  ss.begin(9600);
-
+  Serial.begin(9600);
+  Serial2.begin(9600);
+  
   Serial.print("Simple TinyGPS library v. "); Serial.println(TinyGPS::library_version());
   Serial.println("by Mikal Hart");
   Serial.println();
@@ -29,10 +27,10 @@ void loop()
   // For one second we parse GPS data and report some key values
   for (unsigned long start = millis(); millis() - start < 1000;)
   {
-    while (ss.available())
+    while (Serial2.available())
     {
-      char c = ss.read();
-      Serial.write(c); // uncomment this line if you want to see the GPS data flowing
+      char c = Serial2.read();
+      // Serial.write(c); // uncomment this line if you want to see the GPS data flowing
       if (gps.encode(c)) // Did a new valid sentence come in?
         newData = true;
     }
@@ -52,7 +50,7 @@ void loop()
     Serial.print(" PREC=");
     Serial.print(gps.hdop() == TinyGPS::GPS_INVALID_HDOP ? 0 : gps.hdop());
   }
-
+  
   gps.stats(&chars, &sentences, &failed);
   Serial.print(" CHARS=");
   Serial.print(chars);
