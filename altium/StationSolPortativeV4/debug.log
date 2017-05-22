@@ -1,0 +1,4 @@
+[0519/172131:ERROR:backend_impl.cc(2020)] Corrupt Index file
+[0519/172131:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0519/172131:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {BE11A7C3-78B2-4B7E-839A-BC45F72EAB65}\BrowserCache to C:\ProgramData\Altium\Altium Designer {BE11A7C3-78B2-4B7E-839A-BC45F72EAB65}\old_BrowserCache_000
+[0519/172131:ERROR:cache_creator.cc(129)] Unable to create cache
