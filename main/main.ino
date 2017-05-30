@@ -34,8 +34,8 @@
 #define LCD_RW 35
 #define LCD_RS 36
 #define LCD_E 37
-#define BTN_1 49
-#define BTN_2 47
+#define BTN_1 2
+#define BTN_2 3
 #define BTN_3 45
 #define BTN_4 43
 // carte SD: MISO 50
@@ -126,21 +126,25 @@ void Get_Position (){
 
 /* interrupt service routine for when button 1 is pressed */
 void int_button1_pressed(){
+    Serial.println("btn1 pressed!");
     btn1_ispressed = true;
 }
 
 /* interrupt service routine for when button 2 is pressed */
 void int_button2_pressed(){
+    Serial.println("btn2 pressed!");
     btn2_ispressed = true;
 }
 
 /* interrupt service routine for when button 3 is pressed */
 void int_button3_pressed(){
+    Serial.println("btn3 pressed!");
     btn3_ispressed = true;
 }
 
 /* interrupt service routine for when button 4 is pressed */
 void int_button4_pressed(){
+    Serial.println("btn4 pressed!");
     btn4_ispressed = true;
 }
 
@@ -157,7 +161,9 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
     // list of menus to select from
     int index = 0;
     menu selected_menu = submenu_table[index];
-    interrupts();
+    Serial.println("MAIN MENU\n");
+    Serial.println("Watch rocket\nFind Rocket\nPress ok to select a menu");
+    // interrupts();
     while (1){
         if(btn1_ispressed){
             // button OK
@@ -165,7 +171,7 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
             Serial.println("button OK pressed");
             *p_menu = selected_menu;
             set_all_buttons_false();
-            noInterrupts();
+            // noInterrupts();
             break;
         }
         if(btn2_ispressed){
@@ -200,14 +206,14 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
 }
 
 void watch_rocket_menu(menu* p_menu){
-    interrupts();
+    // interrupts();
     while (1){
 
     }
 }
 
 void find_rocket_menu(menu* p_menu){
-    interrupts();
+    // interrupts();
     while (1){
 
     }
@@ -222,7 +228,11 @@ void setup(){
     // Serial2.begin();
     Log_Start();
     // attach interrupt for buttons
-    //interrupts();
+    // interrupts();
+    pinMode(BTN_1, INPUT);
+    pinMode(BTN_2, INPUT);
+    pinMode(BTN_3, INPUT);
+    pinMode(BTN_4, INPUT);
     attachInterrupt(digitalPinToInterrupt(BTN_1), int_button1_pressed, RISING);
     attachInterrupt(digitalPinToInterrupt(BTN_2), int_button2_pressed, RISING);
     attachInterrupt(digitalPinToInterrupt(BTN_3), int_button3_pressed, RISING);
@@ -236,22 +246,28 @@ void loop(){
     Get_North_Angle();  //Gets the orientation of the base station
     Get_Position();     //Gets the position of the base station
     */
+
+    Serial.println("switching menus");
     switch(current_menu){
-        Serial.println("in switch case");
+
         case MAIN:
+            Serial.println("main case");
             main_menu(& current_menu, submenu_table);
             break;
 
         case WATCH_ROCKET:
+            Serial.println("watch rocket case");
             watch_rocket_menu(& current_menu);
             break;
 
         case FIND_ROCKET:
+            Serial.println("find_rocket case");
             find_rocket_menu(& current_menu);
             break;
 
         default:
             // reset to MAIN
+            Serial.println("default case");
             current_menu = MAIN;
             break;
     }
