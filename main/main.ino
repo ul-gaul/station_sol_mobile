@@ -163,6 +163,7 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
     menu selected_menu = submenu_table[index];
     Serial.println("MAIN MENU\n");
     Serial.println("Watch rocket\nFind Rocket\nPress ok to select a menu");
+    Serial.println("Btn1: OK, Btn2: DOWN");
     // interrupts();
     while (1){
         if(btn1_ispressed){
@@ -175,20 +176,6 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
             break;
         }
         if(btn2_ispressed){
-            // button UP
-            // change selected menu UP
-            Serial.println("button UP pressed");
-            Serial.print("index is: ");
-            Serial.println(index);
-            if(index == 0){
-                index = SUBMENU_TABLE_SIZE - 1;
-                selected_menu = submenu_table[index];
-            } else {
-                index--;
-                selected_menu = submenu_table[index];
-            }
-        }
-        if(btn3_ispressed){
             // button DOWN
             // change selected menu DOWN
             Serial.println("button DOWN pressed");
@@ -202,31 +189,110 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
                 selected_menu = submenu_table[index];
             }
         }
+        if(btn3_ispressed){
+            // button UP
+            // change selected menu UP
+            Serial.println("button UP pressed");
+            Serial.print("index is: ");
+            Serial.println(index);
+            if(index == 0){
+                index = SUBMENU_TABLE_SIZE - 1;
+                selected_menu = submenu_table[index];
+            } else {
+                index--;
+                selected_menu = submenu_table[index];
+            }
+        }
     }
 }
 
+/* function for the menu that allows to watch te Rocket's flight */
 void watch_rocket_menu(menu* p_menu){
-    // interrupts();
+    Serial.println("Watch Rocket Menu");
+    Serial.println("Press back to go to main menu");
+    Serial.println("Press find to go to find rocket menu");
+    Serial.println("BACK: btn1");
+    Serial.println("FIND: btn2");
     while (1){
+        // Receive RocketPackets
+        rpktRX = RFD_RX.receiveRocketPacket(rpktRX, serial_RX);
+        // Log data in SD card
+        sdLogger.writeRocketData(rpktRX);
+        // Display rocket data
+        // Interresting data is: altitude, acceleration XYZ
+        Serial.print("Altitude: ");
+        Serial.println(rpktRX.rocketData.altitude);
+        Serial.print("Accel X: ");
+        Serial.println(rpktRX.rocketData.accelX);
+        Serial.print("Accel Y: ");
+        Serial.println(rpktRX.rocketData.accelY);
+        Serial.print("Accel Z: ");
+        Serial.println(rpktRX.rocketData.accelZ);
+
+        if(btn1_ispressed){
+            // Back to main menu button
+            Serial.println("button BACK pressed");
+            *p_menu = MAIN;
+            set_all_buttons_false();
+            break;
+        }
+        if(btn2_ispressed){
+            // Go to find rocket menu
+            Serial.println("button FIND pressed");
+            *p_menu = FIND_ROCKET;
+            set_all_buttons_false();
+            break;
+        }
 
     }
 }
 
 void find_rocket_menu(menu* p_menu){
-    // interrupts();
+    Serial.println("Find Rocket Menu");
+    Serial.println("Press back to go to main menu");
+    Serial.println("Press watch to go to watch rocket menu");
+    Serial.println("BACK: btn1, WATCH: btn2");
     while (1){
-
+        // Receive RocketPackets
+        rpktRX = RFD_RX.receiveRocketPacket(rpktRX, serial_RX);
+        // Log data in SD card
+        sdLogger.writeRocketData(rpktRX);
+        if(btn1_ispressed){
+            // Back to main menu button
+            Serial.println("button BACK pressed");
+            *p_menu = MAIN;
+            set_all_buttons_false();
+            break;
+        }
+        if(btn2_ispressed){
+            // Go to watch rocket menu
+            Serial.println("button WATCH pressed");
+            *p_menu = WATCH_ROCKET;
+            set_all_buttons_false();
+            break;
+        }
     }
 }
 
 void setup(){
 //    noInterrupts();
     Serial.begin(9600);
-    Serial.println("commencement de la vie");
+    Serial.println("Setup begin");
     serial_RX.begin();
     mag.begin();
     // Serial2.begin();
     Log_Start();
+    // Init SD card
+    bool test_sd_card = false;
+    while(!test_init_sd){
+        test_init_sd = sdLogger.initCard();
+        if(!test_init_sd){
+            Serial.println("SD card init failed");
+        } else {
+            Serial.println("SD card init sucess");
+        }
+    }
+    sdLogger.writeHeader();
     // attach interrupt for buttons
     // interrupts();
     pinMode(BTN_1, INPUT);
@@ -237,7 +303,7 @@ void setup(){
     attachInterrupt(digitalPinToInterrupt(BTN_2), int_button2_pressed, RISING);
     attachInterrupt(digitalPinToInterrupt(BTN_3), int_button3_pressed, RISING);
     attachInterrupt(digitalPinToInterrupt(BTN_4), int_button4_pressed, RISING);
-    Serial.println("le cercle de la vie commence");
+    Serial.println("Setup end");
 }
 
 void loop(){
