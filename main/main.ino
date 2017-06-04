@@ -188,6 +188,7 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
                 index++;
                 selected_menu = submenu_table[index];
             }
+            set_all_buttons_false();
         }
         if(btn3_ispressed){
             // button UP
@@ -243,7 +244,6 @@ void watch_rocket_menu(menu* p_menu){
             set_all_buttons_false();
             break;
         }
-
     }
 }
 
@@ -260,6 +260,7 @@ void find_rocket_menu(menu* p_menu){
         // Display rocket data
         // Interesting to find rocket is: distance from rocket, direction to
         // rocket
+18
 
         if(btn1_ispressed){
             // Back to main menu button
