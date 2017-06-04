@@ -2,3 +2,19 @@
 [0519/172131:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
 [0519/172131:ERROR:cache_util.cc(134)] Unable to move cache folder C:\ProgramData\Altium\Altium Designer {BE11A7C3-78B2-4B7E-839A-BC45F72EAB65}\BrowserCache to C:\ProgramData\Altium\Altium Designer {BE11A7C3-78B2-4B7E-839A-BC45F72EAB65}\old_BrowserCache_000
 [0519/172131:ERROR:cache_creator.cc(129)] Unable to create cache
+[0604/115525:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/115526:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/115528:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/115528:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/125650:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/125651:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/125655:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/125656:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/130601:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/130602:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/134101:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/143343:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/153343:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/153344:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/154833:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0604/154833:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
