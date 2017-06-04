@@ -10,3 +10,10 @@
 #define _menu_watch_rocket_h_h
 
 #include "Menu.h"
+
+class MenuWatchRocketLCD: public Menu
+{
+public:
+    void display_data(float altitude, float accelx, float accely, float accelz);
+
+}

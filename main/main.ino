@@ -201,6 +201,7 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
     Serial.println("Watch rocket\nFind Rocket\nPress ok to select a menu");
     Serial.println("Btn1: OK, Btn2: DOWN");
     // interrupts();
+    myMenu.glcd_main_menu_display();
     while (1){
         if(btn1_ispressed){
             // button OK

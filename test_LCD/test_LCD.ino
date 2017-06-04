@@ -1,10 +1,16 @@
+// test program for the LCD screen
+
 #include "lib/acquisitionLogger.h"
 #include "lib/Compas.h"
 #include "lib/rocketData.h"
 #include "lib/serialPort.h"
 #include "lib/TinyGPS.h"
 #include "lib/transceiver.h"
+#include "lib/Menu.h"
 #include "Arduino.h"
+#include "openGLCD.h"
+#include <fonts/allFonts.h>
+#include "lib/sas_lcd_menu.h"
 
 // Pin definitions
 #define RFD_PORT_NB 1
@@ -26,3 +32,21 @@
 #define LCD_RW 35
 #define LCD_RS 36
 #define LCD_E 37
+
+DisplayMenu myMenu();
+
+void setup(){
+    // Initialize the GLCD
+    GLCD.Init();
+    // Select the font for the default text area
+    GLCD.SelectFont(System5x7);
+    GLCD.ClearScreen();
+    myMenu.main_menu("Watch Rocket");
+    delay(1000);
+}
+
+void loop(){
+    myMenu.watch_rocket_menu(3000, 1, 2, 9.8);
+    delay(1000)
+    myMenu.find_rocket_menu(1000, 30, 180);
+}
