@@ -257,6 +257,10 @@ void find_rocket_menu(menu* p_menu){
         rpktRX = RFD_RX.receiveRocketPacket(rpktRX, serial_RX);
         // Log data in SD card
         sdLogger.writeRocketData(rpktRX);
+        // Display rocket data
+        // Interesting to find rocket is: distance from rocket, direction to
+        // rocket
+
         if(btn1_ispressed){
             // Back to main menu button
             Serial.println("button BACK pressed");
