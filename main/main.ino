@@ -1,7 +1,7 @@
 /*
-    Programme principal pour l'acquisition de données de la station au sol
-    du GAUL - 2017.
-    Ver.    0.1
+    Main program to acquire and log data from rocket.
+    Groupe Aerospatial de l'Universite Laval
+    Ver.    0.5
     Simon Bellemare
     Samuel Côté
     Maxime Guillemette
