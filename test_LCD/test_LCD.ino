@@ -33,7 +33,7 @@
 #define LCD_RS 36
 #define LCD_E 37
 
-DisplayMenu myMenu();
+sas_lcd_menu myMenu;
 
 void setup(){
     // Initialize the GLCD
@@ -47,6 +47,7 @@ void setup(){
 
 void loop(){
     myMenu.watch_rocket_menu(3000, 1, 2, 9.8);
-    delay(1000)
+    delay(1000);
     myMenu.find_rocket_menu(1000, 30, 180);
+    delay(1000);
 }

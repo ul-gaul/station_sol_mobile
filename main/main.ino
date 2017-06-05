@@ -13,6 +13,9 @@
 #include "lib/serialPort.h"
 #include "lib/TinyGPS.h"
 #include "lib/transceiver.h"
+#include "lib/sas_lcd_menu.h"
+#include "openGLCD.h"
+#include "fonts/allFonts.h"
 #include "Arduino.h"
 
 // Pin definitions
@@ -35,6 +38,7 @@
 #define LCD_RW 35
 #define LCD_RS 36
 #define LCD_E 37
+#define LCD_FONT System5x7
 #define BTN_1 2
 #define BTN_2 3
 #define BTN_3 45
@@ -84,6 +88,8 @@ bool btn1_ispressed = false;
 bool btn2_ispressed = false;
 bool btn3_ispressed = false;
 bool btn4_ispressed = false;
+
+sas_lcd_menu lcd_display;
 
 void Log_Start(){
     while(!test_init_sd){
@@ -201,8 +207,15 @@ void main_menu(menu* p_menu, menu submenu_table[SUBMENU_TABLE_SIZE]){
     Serial.println("Watch rocket\nFind Rocket\nPress ok to select a menu");
     Serial.println("Btn1: OK, Btn2: DOWN");
     // interrupts();
-    myMenu.glcd_main_menu_display();
+    lcd_display.main_menu("Watch rocket");
     while (1){
+        if(selected_menu == WATCH_ROCKET){
+            lcd_display.main_menu("Watch rocket");
+        } else if(selected_menu == FIND_ROCKET){
+            lcd_display.main_menu("Find rocket");
+        } else {
+            lcd_display.main_menu("");
+        }
         if(btn1_ispressed){
             // button OK
             // selected menu is confirmed
@@ -266,7 +279,10 @@ void watch_rocket_menu(menu* p_menu){
         Serial.println(rpktRX.rocketData.accelY);
         Serial.print("Accel Z: ");
         Serial.println(rpktRX.rocketData.accelZ);
-
+        lcd_display.watch_rocket_menu(rpktRX.rocketData.altitude,
+                                        rpktRX.rocketData.accelX,
+                                        rpktRX.rocketData.accelY,
+                                        rpktRX.rocketData.accelZ);
         if(btn1_ispressed){
             // Back to main menu button
             Serial.println("button BACK pressed");
@@ -329,6 +345,9 @@ void find_rocket_menu(menu* p_menu){
         rocket_angle = get_rocket_angle(bts_latitude, bts_longitude, rocket_latitude, rocket_longitude, north_angle);
         Serial.print("Angle to rocket from north is: ");
         Serial.println(rocket_angle*180/PI);
+        lcd_display.find_rocket_menu(distance_to_rocket,
+                                        north_angle,
+                                        rocket_angle);
         if(btn1_ispressed){
             // Back to main menu button
             Serial.println("button BACK pressed");
@@ -347,7 +366,7 @@ void find_rocket_menu(menu* p_menu){
 }
 
 void setup(){
-//    noInterrupts();
+    // noInterrupts();
     Serial.begin(9600);
     Serial.println("Setup begin");
     serial_RX.begin();
@@ -376,6 +395,8 @@ void setup(){
     attachInterrupt(digitalPinToInterrupt(BTN_2), int_button2_pressed, FALLING);
     attachInterrupt(digitalPinToInterrupt(BTN_3), int_button3_pressed, FALLING);
     attachInterrupt(digitalPinToInterrupt(BTN_4), int_button4_pressed, FALLING);
+    GLCD.Init();
+    GLCD.SelectFont(LCD_FONT);
     Serial.println("Setup end");
 }
 
