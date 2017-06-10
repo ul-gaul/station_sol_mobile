@@ -1,0 +1,10 @@
+Added Component: Designator=SDsocket(Carte SD)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Out CS Pin=SDsocket-2
+Added Pin To Net: NetName=Out Mosi Pin=SDsocket-3
+Added Pin To Net: NetName=Out SCK Pin=SDsocket-5
+Added Pin To Net: NetName=+3.3V Pin=SDsocket-6
+Added Pin To Net: NetName=MISO Pin=SDsocket-7
+Added Pin To Net: NetName=GND Pin=SDsocket-11
+Added Pin To Net: NetName=GND Pin=SDsocket-12
+Added Member To Class: ClassName=StationSolPortative Member=Component SDsocket Carte micro SD

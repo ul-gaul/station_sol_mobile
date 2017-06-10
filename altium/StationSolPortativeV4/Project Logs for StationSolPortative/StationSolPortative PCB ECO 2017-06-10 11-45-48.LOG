@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=NetPot-Prot_2 Pin=R6-1
+Removed Pin From Net: NetName=NetPot-Prot_3 Pin=R13-2
+Removed Pin From Net: NetName=NetPot-Prot_3 Pin=U1-6
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Component: Designator=Pot-Ecran(Trim 67WR)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=Pot-Prot(Trim 67WR)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VEE Pin=Pot-Ecran-1
+Added Pin To Net: NetName=VO Pin=Pot-Ecran-2
+Added Pin To Net: NetName=GND Pin=Pot-Ecran-3
+Added Pin To Net: NetName=NetPot-Prot_2 Pin=Pot-Prot-2
+Added Pin To Net: NetName=NetPot-Prot_3 Pin=Pot-Prot-3
+Added Pin To Net: NetName=NetPot-Prot_3 Pin=R6-1
+Added Pin To Net: NetName=NetPot-Prot_2 Pin=R13-2
+Added Pin To Net: NetName=NetPot-Prot_2 Pin=U1-6
+Added Member To Class: ClassName=StationSolPortative Member=Component Pot-Ecran Res Pot
+Added Member To Class: ClassName=StationSolPortative Member=Component Pot-Prot Res Pot
