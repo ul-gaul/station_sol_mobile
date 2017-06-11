@@ -1,7 +1,7 @@
 /*
-    Main program to acquire and log data from rocket.
+    Test bench for the rocket's base station
     Groupe Aerospatial de l'Universite Laval, Avionics Team
-    Ver.    1.0
+    Ver.    0.1
     Simon Bellemare
     Samuel Côté
     Maxime Guillemette
