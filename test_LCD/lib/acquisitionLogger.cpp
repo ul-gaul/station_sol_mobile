@@ -17,11 +17,11 @@ bool AcquisitionLogger::initCard()
     Initialise SD card and create file and directory
     return: True if initialization succeeds, false if fails
     */
-    bool success;
+    bool succes;
 
     //init Card
-    success = SD.begin(mCsPin);
-    if (success)
+    succes = SD.begin(mCsPin);
+    if (succes)
     {
         //Create File
         if (!SD.exists(mSystemType))
@@ -78,9 +78,6 @@ void AcquisitionLogger::writeHeader()
     mLoggingFile.print(ACCEL_X); mLoggingFile.print(",");
     mLoggingFile.print(ACCEL_Y); mLoggingFile.print(",");
     mLoggingFile.print(ACCEL_Z); mLoggingFile.print(",");
-    mLoggingFile.print(MAGNET_X); mLoggingFile.print(",");
-    mLoggingFile.print(MAGNET_Y); mLoggingFile.print(",");
-    mLoggingFile.print(MAGNET_Z); mLoggingFile.print(",");
     mLoggingFile.print(ALTITUDE); mLoggingFile.print(",");
     mLoggingFile.print(LATITUDE1); mLoggingFile.print(",");
     mLoggingFile.print(LONGITUDE1); mLoggingFile.print(",");
@@ -88,6 +85,25 @@ void AcquisitionLogger::writeHeader()
     mLoggingFile.print(LONGITUDE2); mLoggingFile.print(",");
     mLoggingFile.print(TEMP_1); mLoggingFile.print(",");
     mLoggingFile.print(TEMP_2); mLoggingFile.print(",");
+    mLoggingFile.print(TEMP_3); mLoggingFile.print(",");
+    mLoggingFile.print(TIME_STAMP_DATE); mLoggingFile.print(",");
+    mLoggingFile.print(QUATERNIONA); mLoggingFile.print(",");
+    mLoggingFile.print(QUATERNIONB); mLoggingFile.print(",");
+    mLoggingFile.print(QUATERNIONC); mLoggingFile.print(",");
+    mLoggingFile.print(QUATERNIOND); mLoggingFile.print(",");
+    mLoggingFile.print(ETAT_BOARD_ACQUISITION1); mLoggingFile.print(",");
+    mLoggingFile.print(ETAT_BOARD_ACQUISITION2); mLoggingFile.print(",");
+    mLoggingFile.print(ETAT_BOARD_ACQUISITION3); mLoggingFile.print(",");
+    mLoggingFile.print(ETAT_BOARD_ALIM1); mLoggingFile.print(",");
+    mLoggingFile.print(ETAT_BOARD_ALIM2); mLoggingFile.print(",");
+    mLoggingFile.print(ETAT_BOARD_PAYLOAD1); mLoggingFile.print(",");
+    mLoggingFile.print(ALIM_VOLTAGE); mLoggingFile.print(",");
+    mLoggingFile.print(ALIM_COURANT); mLoggingFile.print(",");
+    mLoggingFile.print(PAYLOAD_ANG_SPEEDX); mLoggingFile.print(",");
+    mLoggingFile.print(PAYLOAD_ANG_SPEEDY); mLoggingFile.print(",");
+    mLoggingFile.print(PAYLOAD_ANG_SPEEDZ); mLoggingFile.print(",");
+    mLoggingFile.print(CAMERA); mLoggingFile.print(",");
+    mLoggingFile.print(DEPLOIEMENT); mLoggingFile.print(",");
     mLoggingFile.println();
     mLoggingFile.flush();
 }
@@ -105,9 +121,6 @@ void AcquisitionLogger::writeRocketData(RocketPacket packet)
     mLoggingFile.print(packet.rocketData.accelX); mLoggingFile.print(",");
     mLoggingFile.print(packet.rocketData.accelY); mLoggingFile.print(",");
     mLoggingFile.print(packet.rocketData.accelZ); mLoggingFile.print(",");
-    mLoggingFile.print(packet.rocketData.magnetX); mLoggingFile.print(",");
-    mLoggingFile.print(packet.rocketData.magnetY); mLoggingFile.print(",");
-    mLoggingFile.print(packet.rocketData.magnetZ); mLoggingFile.print(",");
     mLoggingFile.print(packet.rocketData.altitude); mLoggingFile.print(",");
     mLoggingFile.print(packet.rocketData.latitude1, 7); mLoggingFile.print(",");
     mLoggingFile.print(packet.rocketData.longitude1, 7); mLoggingFile.print(",");
@@ -115,6 +128,25 @@ void AcquisitionLogger::writeRocketData(RocketPacket packet)
     mLoggingFile.print(packet.rocketData.longitude2, 7); mLoggingFile.print(",");
     mLoggingFile.print(packet.rocketData.temperature1); mLoggingFile.print(",");
     mLoggingFile.print(packet.rocketData.temperature2); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.temperature3); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.timeStampDate); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.quaterniona); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.quaternionb); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.quaternionc); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.quaterniond); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.etatBoardAcquisition1); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.etatBoardAcquisition2); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.etatBoardAcquisition3); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.etatBoardAlim1); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.etatBoardAlim2); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.etatBoardPayload1); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.voltage); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.courant); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.angSpeedXPayload); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.angSpeedYPayload); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.angSpeedZPayload); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.camera); mLoggingFile.print(",");
+    mLoggingFile.print(packet.rocketData.deploiement); mLoggingFile.print(",");
     mLoggingFile.println();
     mLoggingFile.flush();
 }
