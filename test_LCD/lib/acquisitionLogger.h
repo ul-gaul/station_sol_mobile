@@ -70,4 +70,3 @@ class AcquisitionLogger
     String mSystemType;
     File mLoggingFile;
 };
-#endif
