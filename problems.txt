@@ -1,0 +1,9 @@
+Liste des problèmes rencontrés à l'IREC 2017:
+
+1- Arduino à l'envers
+2- sens du socket à carte sd
+3- Pins interrupts
+4- protection des batteries, à l'envers +-
+5- Pins de l'écran LCD à revalider
+6- Résistances associées à l'écran LCD (potentiomètre marche pas)
+7- 
